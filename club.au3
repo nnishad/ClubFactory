@@ -31,7 +31,7 @@ MouseClick ("left", 1104,640)
 MouseClick ("left", 1104,640)
 Sleep(1000)
 Send("^W")
-Run('C:\Windows\Notepad.exe "D:\club.txt" ')
+Run('C:\Windows\Notepad.exe "club.txt" ')
 
 WinWaitActive("club.txt - Notepad")
 

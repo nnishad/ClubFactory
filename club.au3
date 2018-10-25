@@ -49,3 +49,5 @@ WinClose("club.txt - Notepad", "")
 
 
 Next
+
+;script by Nikhil Nishad

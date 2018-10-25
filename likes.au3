@@ -2,13 +2,13 @@
 #include <MsgBoxConstants.au3>
 #include <WinAPIFiles.au3>
 ; Open the file for reading and store the handle to a variable.
-Local $hFileOpen = FileOpen("D:\club.txt", $FO_READ)
+Local $hFileOpen = FileOpen("club.txt", $FO_READ)
 If $hFileOpen = -1 Then
    MsgBox($MB_SYSTEMMODAL, "", "An error occurred when reading the file.")
    Return False
 EndIf
-$digits = 40
-For $i = 25 To $digits
+$digits = 50
+For $i = 1 To $digits
 $CMD = '"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"'&  ' https://cfshare1.fromfactory.club/auth3/auth?redirect=%2Ftheme%2Fcollect_like%2Fprogress%3Fshare%3D3137875 '
 Run(@ComSpec & " /c " & $CMD,"", @SW_HIDE )
 WinWaitActive("Club Factory | Lower Price, Better Service - Google Chrome")
